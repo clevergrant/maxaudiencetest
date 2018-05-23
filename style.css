@@ -1,0 +1,329 @@
+/*
+Theme Name: MaxAudience Test
+Author: Grant Perdue
+Description: I'm scared I'll mess this up
+Version: 0.0.1
+Tags: maxaudience
+*/
+
+* {
+	color: #333;
+}
+
+.nav-logo {
+	margin: .5rem 2rem .5rem 0;
+}
+.page_item a:hover,
+.page_item a:active
+{
+	text-decoration: none;
+	color: #31448d;
+}
+
+.page_item a:before {
+	content: "\2022";
+	color: #90be4f;
+	font-size: 1.3rem;
+	position: absolute;
+	top: -0.6rem;
+	left: 46%;
+	opacity: 0;
+	transition: .2s all ease-in-out;
+	-webkit-transition: .2s all ease-in-out;
+}
+
+.page_item a:hover:before {
+	opacity: 1;
+}
+
+.btn-outline-getfitness {
+	color: #31448d;
+	border-color: #31448d;
+	font-size: .8rem;
+	font-weight: bold;
+	margin: 0 2rem;
+}
+
+.btn-outline-getfitness:hover,
+.btn-outline-getfitness:not(:disabled):not(.disabled):active {
+	background-color: #31448d;
+	border-color: #31448d;
+}
+
+.btn-outline-getfitness:focus {
+	box-shadow: 0 0 0 0.2rem rgba(49,68,141,.5);
+}
+
+/* Slideshow */
+
+.banner-slideshow-container {
+	position: relative;
+	z-index: 1;
+}
+
+.banner-slideshow { 
+	position: relative;
+	min-height: 40rem;
+	width: 100%;
+	background-color: black;
+}
+
+.banner-slideshow > div { 
+	position: absolute;
+	min-height: 40rem;
+	width: 100%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.slide-1 {
+	background-image: url(images/slideshow/slide-1.jpg);
+}
+.slide-2 {
+	background-image: url(images/slideshow/slide-2.jpg);
+}
+.slide-3 {
+	background-image: url(images/slideshow/slide-3.jpg);
+}
+.slide-4 {
+	background-image: url(images/slideshow/slide-4.jpg);
+}
+.slide-5 {
+	background-image: url(images/slideshow/slide-5.jpg);
+}
+.slide-6 {
+	background-image: url(images/slideshow/slide-6.jpg);
+}
+
+/* banner content */
+
+.banner-content-container {
+	position: relative;
+	z-index: 2;
+	margin-top: -40rem;
+	height: 40rem;
+}
+
+.banner-content {
+	padding-top: 5rem;
+}
+
+.banner-content h1 {
+	color: white;
+	font-style: italic;
+	font-weight: bolder;
+	text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.btn-slideshow {
+	background-color: #90be4f;
+	padding: 1rem 2rem;
+	font-size: 2rem;
+	color: white;
+	margin-right: 2rem;
+	margin-top: 2rem;
+}
+
+.btn-slideshow:focus {
+	box-shadow: 0 0 0 0.2rem rgba(144,190,77,.5);
+}
+
+/* promotion banner */
+.promotion-banner {
+	position: relative;
+	z-index: 3;
+	background-color: rgba(49, 68, 141, .8);
+	height: 10rem;
+	margin-top: -10rem;
+	padding-top: 1.5rem;
+}
+
+.promotion-banner div h2 {
+	color: white;
+	text-align: center;
+}
+
+.btn-promo {
+	background-color: #90be4f;
+	color: white;
+	min-width: 15rem;
+}
+
+.btn-promo:focus {
+	box-shadow: 0 0 0 0.2rem rgba(144,190,77,.5);
+}
+
+/* learn more section */
+.learn-more>div {
+	min-height: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+}
+.learn-more>div>p {
+	max-width: 17rem;
+	text-align: center;
+	margin: 1rem 0 2rem 0;
+}
+.square-1 {
+	background-image: url(images/learnmore/fitness-class-pic.jpg);
+}
+.square-3{
+	background-image: url(images/learnmore/club-amenities-pic.jpg);
+}
+.square-5{
+	background-image: url(images/learnmore/personal-training-pic.jpg);
+}
+
+.btn-learn-more {
+	background-color: #90be4f;
+	color: white;
+}
+
+.btn-learn-more:focus {
+	box-shadow: 0 0 0 0.2rem rgba(144,190,77,.5);
+}
+
+/* our hours */
+
+.hours-column h1 {
+	text-align: center;
+}
+.hours-column table {
+	margin: 1rem auto;
+}
+.join-now-button {
+	display: flex;
+	justify-content: center;
+}
+
+.join-now-button>p {
+	position: relative;
+	top: .5rem;
+}
+
+.form-title {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.form-title img {
+	width: 85px;
+	height: 60px;
+	margin-right: 1rem;
+}
+
+.our-hours {
+	background-color: #ebebeb;
+	background-image: url(images/logo/bg-logo.png);
+	background-position-x: left;
+	background-position-y: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.our-hours h1 {
+	color: #31448d;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+.signup-form {
+	border: 1px solid #31448d;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+
+.btn-trial-pass {
+	background-color: #90be4f;
+	color: white;
+	font-size: 1.4rem;
+	padding: .5rem 2rem;
+}
+
+.btn-trial-pass:focus {
+	box-shadow: 0 0 0 0.2rem rgba(144,190,77,.5);
+}
+
+.form-getfitness .form-control {
+	background: transparent;
+	border: 2px solid #31448d;
+}
+
+.form-getfitness .form-control:focus {
+	box-shadow: 0 0 0 0.2rem rgba(49,68,141,.5);
+}
+
+/* contact us form */
+
+.contact-us {
+	background-color: #31448d;
+	padding: 5rem;
+}
+
+.contact-us h1 {
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.contact-form {
+	border: 2px solid white;
+	padding: 2rem;
+}
+
+.contact-form>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"] {
+	min-width: 25rem;
+	margin-bottom: 3rem;
+	background: rgba(255,255,255,.65);
+	border: none;
+	box-shadow: none;
+	padding: .8rem 1.3rem;
+	font-size: .8rem;
+}
+
+.contact-form input.btn-trial-pass {
+	min-width: 10rem;
+	margin-bottom: 0;
+}
+
+.map-area {
+	font-size: 1.5rem;
+}
+
+.map-area img {
+	margin-bottom: 3rem;
+}
+
+.map-area p {
+	color: white;
+}
+
+/* footer */
+footer h4 {
+	color: #31448d;
+	margin-bottom: 2rem;
+}
+
+footer div {
+	text-align: left;
+}
+
+footer p {
+	margin-bottom: .5rem;
+}
